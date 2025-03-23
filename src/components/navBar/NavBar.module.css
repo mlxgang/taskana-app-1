@@ -1,0 +1,10 @@
+.navbar {
+  background-color: var(--neutral-100);
+  border-right: 1px solid var(--neutral-300);
+  padding: 24px 16px;
+
+  width: 204px;
+
+  display: flex;
+  flex-direction: column;
+}

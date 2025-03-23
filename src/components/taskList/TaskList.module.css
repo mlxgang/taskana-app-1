@@ -1,0 +1,37 @@
+.list {
+  padding: 0 24px;
+  overflow-y: auto;
+
+  height: 100%;
+}
+
+.idle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  /*height: 1000px;*/
+}
+
+.idleText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.idleText > * {
+  text-align: center;
+}
+
+.idleText > span {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+}
+
+.idleImg {
+  width: 463px;
+  height: 319px;
+}

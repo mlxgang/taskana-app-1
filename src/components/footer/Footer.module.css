@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px;
+}
+
+footer span, .link {
+  color: var(--neutral-600);
+}
+
+.link {
+  text-decoration: underline;
+  text-underline-offset: 2px
+}

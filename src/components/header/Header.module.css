@@ -1,0 +1,10 @@
+.header {
+  background-color: var(--base);
+  padding: 12px 24px 12px 16px;
+  height: var(--header-height);
+
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

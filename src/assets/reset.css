@@ -1,0 +1,13 @@
+body, ul, li, button, p, h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}

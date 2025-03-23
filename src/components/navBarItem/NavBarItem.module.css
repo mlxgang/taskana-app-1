@@ -1,0 +1,23 @@
+.wrapper {
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow);
+
+  padding: 8px;
+  background-color: var(--accent-secondary);
+  color: var(--color-white);
+
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.title {
+  text-align: start;
+  width: 124px;
+}

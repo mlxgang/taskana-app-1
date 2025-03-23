@@ -1,0 +1,8 @@
+.wrapper {
+  background-color: var(--base);
+}
+
+.logo {
+  width: 126px;
+  height: 40px;
+}
