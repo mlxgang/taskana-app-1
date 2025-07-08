@@ -1,12 +1,10 @@
-import cl from './SideBar.module.css';
-
-import { Statistic } from '@/components/statistic/Statistic.jsx';
-
+import { Statistic } from '@components';
+import styles from './sideBar.module.css';
 
 export const SideBar = () => {
   return (
-    <div className={cl.sidebar}>
-      <Statistic/>
-    </div>
+    <aside className={styles.sidebar}>
+      <Statistic />
+    </aside>
   );
 };

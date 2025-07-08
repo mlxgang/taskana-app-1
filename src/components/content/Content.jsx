@@ -1,14 +1,13 @@
-import { NavBar } from '@/components/navBar/NavBar.jsx';
-import { IncomingTasks } from '@/pages/incomingTasks/IncomingTasks.jsx';
-import { SideBar } from '@/components/sideBar/SideBar.jsx';
-import cl from './Content.module.css';
+import { NavBar, SideBar } from '@components';
+import { IncomingTasks } from '@pages';
+import styles from './content.module.css';
 
 export const Content = () => {
   return (
-    <div className={cl.content}>
-      <NavBar/>
-      <IncomingTasks/>
-      <SideBar/>
+    <div className={styles.content}>
+      <NavBar />
+      <IncomingTasks />
+      <SideBar />
     </div>
   );
 };

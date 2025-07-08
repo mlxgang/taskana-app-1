@@ -1,21 +1,20 @@
-import icons24 from '@/assets/svg/icons-24.svg?no-inline';
+import { InboxIcon, PlusIcon } from '@icons';
 
-/**
- *
- * @param {24}      size      - icon size
- * @param {string}  iconName  - svg sprite name
- * @param {string}  className - className
- *
- * */
-
-const icons = {
-  24: icons24,
+const svgComponents = {
+  plus: PlusIcon,
+  inbox: InboxIcon,
 };
 
-export const Icon = ({name, size, className = ''}) => {
+const FallbackSvg = ({ props }) => (<svg {...props}></svg>);
+
+/**
+ * @param {string}  name  - svg sprite name
+ * @param {any}     props - other props
+ * */
+
+export const Icon = ({ name, props }) => {
+  const Svg = svgComponents[name] || FallbackSvg;
   return (
-    <svg className={className}>
-      <use href={icons[size] + '#' + name}></use>
-    </svg>
+    <Svg {...props} />
   );
 };

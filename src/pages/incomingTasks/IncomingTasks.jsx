@@ -1,12 +1,11 @@
-import { MainContainer } from '@/components/mainContainer/MainContainer.jsx';
-import cl from './IncomingTasks.module.css';
-import { Footer } from '@/components/footer/Footer.jsx';
+import { Footer, MainContainer } from '@components';
+import cl from './incomingTasks.module.css';
 
 export const IncomingTasks = () => {
   return (
     <section className={cl.tasks}>
-      <MainContainer/>
-      <Footer/>
+      <MainContainer />
+      <Footer />
     </section>
   );
 };

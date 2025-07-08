@@ -1,12 +1,14 @@
-import cl from './Header.module.css'
-import {Logo} from "@/components/logo/Logo.jsx";
-import {Button} from "@/components/button/Button.jsx";
+import { Button, Icon, Logo } from '@components';
+import styles from './header.module.css';
 
 export const Header = () => {
   return (
-    <header className={cl.header}>
-      <Logo/>
-      <Button type='primary' icon='plus' title='Создать'/>
+    <header className={styles.header}>
+      <Logo />
+      <Button color="primary">
+        <Icon name="plus" />
+        <span>Создать</span>
+      </Button>
     </header>
-  )
-}
+  );
+};

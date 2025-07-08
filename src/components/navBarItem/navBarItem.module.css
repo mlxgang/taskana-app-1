@@ -1,0 +1,26 @@
+.link {
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-base);
+
+  padding: 8px;
+  background-color: var(--neutral-800);
+  color: var(--neutral-0);
+}
+
+.link > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.link > span {
+  text-align: start;
+  vertical-align: bottom;
+  width: 124px;
+
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
+  font-weight: var(--font-semibold);
+}

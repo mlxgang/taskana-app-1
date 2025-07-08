@@ -1,22 +1,22 @@
-import cl from './NavBar.module.css';
-import { NavBarItem } from '@/components/navBarItem/NavBarItem.jsx';
+import { Icon, NavBarItem } from '@components';
+import styles from './navBar.module.css';
 
 const navButtons = [
-  {icon: 'inbox', title: 'Входящие'}
+  { icon: 'inbox', label: 'Входящие', href: '#' },
 ];
 
 export const NavBar = () => {
   return (
-    <nav className={cl.navbar}>
-      <ul>
-        {navButtons.map(btn =>
-          <li key={btn.title}>
-            <NavBarItem
-              icon={btn.icon}
-              title={btn.title}
-            />
+    <nav className={styles.navbar}>
+      <ul className={styles.list}>
+        {navButtons.map(btn => (
+          <li key={btn.label}>
+            <NavBarItem href={btn.href}>
+              <Icon name={btn.icon} />
+              <span>{btn.label}</span>
+            </NavBarItem>
           </li>
-        )}
+        ))}
       </ul>
     </nav>
   );

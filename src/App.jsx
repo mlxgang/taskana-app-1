@@ -1,10 +1,7 @@
-import { AppLayout } from '@/layouts/appLayout/AppLayout'
-import './App.css'
+import { AppLayout } from '@layouts';
 
-function App() {
-  return (
-    <AppLayout />
-  )
-}
+const App = () => {
+  return <AppLayout />;
+};
 
-export default App
+export default App;

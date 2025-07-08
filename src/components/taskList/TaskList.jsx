@@ -1,20 +1,20 @@
-import cl from './TaskList.module.css';
 import { useState } from 'react';
-import idleImg from '@images/tasks-idle.png?url';
+import idleImg from '@assets/images/tasks-idle.png?url';
+import styles from './taskList.module.css';
 
 const idleMessage = {
   title: 'Все твои задачи организованы как надо',
-  text: 'Отличная работа! Ты большой молодец!'
+  msg: 'Отличная работа! Ты большой молодец!',
 };
 
 const IdleElem = () => {
   return (
-    <div className={cl.idle}>
-      <div className={cl.idleText}>
+    <div className={styles.idle}>
+      <div className={styles.idleText}>
         <h2>{idleMessage.title}</h2>
-        <span>{idleMessage.text}</span>
+        <span>{idleMessage.msg}</span>
       </div>
-      <img className={cl.idleImg} src={idleImg} alt="Задач пока нет"/>
+      <img className={styles.idleImg} src={idleImg} alt="Задач пока нет" width={464} height={320} />
     </div>
   );
 };
@@ -23,10 +23,10 @@ export const TaskList = () => {
   const [tasks, setTasks] = useState(null);
 
   return (
-    <section className={cl.list}>
+    <section className={styles.list}>
       {tasks
-        ? {tasks}
-        : <IdleElem/>
+        ? tasks
+        : <IdleElem />
       }
     </section>
   );

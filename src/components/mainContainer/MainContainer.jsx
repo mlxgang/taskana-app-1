@@ -1,13 +1,13 @@
-import cl from './MainContainer.module.css';
-import { TaskList } from '@/components/taskList/TaskList.jsx';
+import { TaskList } from '@components';
+import styles from './mainContainer.module.css';
 
 export const MainContainer = () => {
   return (
     <>
-      <header className={cl.header}>
+      <header className={styles.header}>
         <h1>Входящие</h1>
       </header>
-      <TaskList/>
+      <TaskList />
     </>
   );
 };

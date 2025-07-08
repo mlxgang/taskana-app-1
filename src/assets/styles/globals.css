@@ -1,23 +1,16 @@
-@import url('./variables.css');
-@import url('./reset.css');
-
-@font-face {
-  font-family: 'source-sans';
-  src: url(./fonts/SourceSans3.woff2);
-}
-
 * {
-  font-family: source-sans, Arial, sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   letter-spacing: 0;
   font-weight: var(--font-regular);
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-md);
 
   box-sizing: border-box;
 }
 
 body {
   min-width: 1280px;
+  overflow-y: hidden;
 }
 
 h1, h2, h3 {
@@ -36,5 +29,5 @@ h2 {
 
 h3 {
   font-size: 1.125rem;
-  line-height: 1.5rem;
+  line-height: 1.5rem
 }

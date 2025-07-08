@@ -1,18 +1,14 @@
-import cl from './NavBarItem.module.css';
-import { Icon } from '@/components/icon/Icon.jsx';
+import styles from './navBarItem.module.css';
 
 /**
- *
- * @param icon  {string} - icon name
- * @param title {string} - navbar title
- *
+ * @param children  {React.ReactElement}  - someone link content
+ * @param href      {string}              - href link
  * */
 
-export const NavBarItem = ({icon, title}) => {
+export const NavBarItem = ({ children, href }) => {
   return (
-    <a className={cl.wrapper}>
-      <Icon size={24} name={icon} className={cl.icon}/>
-      <span className={cl.title}>{title}</span>
+    <a className={styles.link} href={href}>
+      {children}
     </a>
   );
 };

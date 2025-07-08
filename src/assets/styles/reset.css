@@ -3,9 +3,17 @@ body, ul, li, button, p, h1, h2, h3 {
   margin: 0;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 button {
   border: none;
-  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 
 li {
