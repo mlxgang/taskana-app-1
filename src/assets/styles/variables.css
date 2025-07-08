@@ -36,7 +36,4 @@
 
   --shadow-base: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
   --shadow-sm: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
-
-  --border-radius: 8px;
-  --header-height: 64px;
 }
