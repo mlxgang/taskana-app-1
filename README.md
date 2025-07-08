@@ -21,11 +21,10 @@ Taskana - приложение для планирования задач, от�
 - **CSS Modules**\* — удобное использование стилей в рамках компонента
 - [**ESLint**](https://eslint.org) - линтер для избежания ошибок в коде
 - [**Prettier**](https://prettier.io) - автоформатирование кода
-
-
+  
 - [**WebStorm**](https://www.jetbrains.com/webstorm/) - самая удобный и продвинутый редактор кода по моему мнению
-- [**SVG Optimizer**](https://jakearchibald.github.io/svgomg/) — оптимизация веса и кода SVG иконок
-- **Pixel Perfect Pro** — проверка соответствия макета и
+- [**SVG Optimizer**](https://jakearchibald.github.io/svgomg/) - оптимизация веса и кода SVG иконок
+- **Pixel Perfect Pro** - проверка соответствия макета и
   проекта ([Google Chrome](https://chromewebstore.google.com/detail/pixel-perfect-pro/nnhifpoojdlddpnhjbhiagddgckpmpfb?hl=ru&pli=1), [Firefox](https://addons.mozilla.org/ru/firefox/addon/pixel-perfect-pro/))
 - [**Импорт компонентов и прочего из index.js**](https://github.com/mlxgang/import-optimization) - в целом все описано в
   статье, добавить нечего)
