@@ -39,7 +39,7 @@ Taskana - приложение для планирования задач, от�
 Клонирование репозитория
 
 ```bash
-git clone https://github.com/mlxgang/taskana-app-1.git
+https://github.com/mlxgang/TaskanaApp1.git
 ```
 
 Установка зависимостей
